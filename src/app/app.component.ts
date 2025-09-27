@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angularintro';
+
+// string interpolation.................
+
+Headingname = "Raju Antharala";
+ 
+Fathername = "Suryanarayana";
+
+// getAdress()
+//   return  "kadiri";
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
