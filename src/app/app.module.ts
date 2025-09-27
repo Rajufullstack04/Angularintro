@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
+import { importProvidersFrom, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CompAcomponent } from './CompA/CompA.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompAcomponent 
   ],
   imports: [
     BrowserModule
