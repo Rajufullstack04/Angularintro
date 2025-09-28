@@ -10,7 +10,7 @@ export class AppComponent {
 // string interpolation.................
 
 Headingname = "Raju Antharala";
- 
+  
 Fathername = "Suryanarayana";
 
  getAdress():string{
@@ -49,32 +49,26 @@ evant2(){
 evantMouseover(testvalue:string){
   console.log(testvalue);
 }
-evtMouseOver_2(eventDetails:MouseEvent){
-   // console.log(eventDetails);
-    // let a:unknown = "madan";
-    // let name = a as string
-     let paragraph = eventDetails.target as HTMLParagraphElement;
-     window.alert(paragraph.innerText);   //Third Paragraph
 
-   // i want to get the text of the paragraph       //Third Paragraph
+eventMouseover_2(eventDetailes:MouseEvent){
+  console.log(eventDetailes);
 
-    //alert message
+  let paragraph = eventDetailes.target as HTMLParagraphElement;
+  window.alert(paragraph.innerText);
+}
 
-    //i understand target is paragraph element 
-
-
+event_3(eventDetailes:any) {
+console.log(eventDetailes);
   }
 
+event_4(eventDetailes:KeyboardEvent){
+  console.log(eventDetailes);
 
-  evtKeyEvent(eventDetails:KeyboardEvent){
-    //console.log(eventDetails);
-    let input = eventDetails.target as HTMLInputElement;
-    console.log(input.value);
-  }
-
+  let input = eventDetailes.target as HTMLInputElement;
+  console.log(input.value);
 
 
-
+}
 
 
 
@@ -84,6 +78,25 @@ evtMouseOver_2(eventDetails:MouseEvent){
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

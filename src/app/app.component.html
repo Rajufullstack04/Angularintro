@@ -29,30 +29,19 @@ Gender:
 <button (mouseover)="evant2()">Mouseoverhere</button>
 
 
-<!-- $ Event......... -->
-<p (mouseover)="evantMouseover('Madan')">Raju
-</p>
+<!-- $ Event...we can get the element detailes...... -->
 
 
-
-<!-- <p (mouseover)="evtMouseOver_2($event)">
-    Third Paragraph</p> -->
-
-<!-- 
- <p (click)="evtPKeyEvent($event)">
-    fourth Paragraph</p>  -->
+<p (mouseover)="evantMouseover('Raju')">Son of {{Fathername}}</p>
 
 
-<input
- type="text" 
-(keyup)="evtKeyEvent($event)"
->
+<p (mouseover)="eventMouseover_2($event)">Son of {{Fathername}}</p>
+
+<p (mouseover)="eventMouseover_2($event)">{{Headingname}}</p>
 
 
+<p (click)="event_3($event)" >click PointerEvent </p>
 
-
-
-
-
+ Enter any key on the keybord:<input type="text" (keyup)="event_4($event)" />
 
 
