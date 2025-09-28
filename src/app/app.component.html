@@ -25,10 +25,28 @@ Gender:
 
 <!-- -------------------Evennt binding------------------------ -->
 
+<button (click)="evant1()">Click</button>
+<button (mouseover)="evant2()">Mouseoverhere</button>
+
+
+<!-- $ Event......... -->
+<p (mouseover)="evantMouseover('Madan')">Raju
+</p>
 
 
 
+<!-- <p (mouseover)="evtMouseOver_2($event)">
+    Third Paragraph</p> -->
 
+<!-- 
+ <p (click)="evtPKeyEvent($event)">
+    fourth Paragraph</p>  -->
+
+
+<input
+ type="text" 
+(keyup)="evtKeyEvent($event)"
+>
 
 
 

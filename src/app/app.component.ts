@@ -38,6 +38,48 @@ imagesrc ="c:\Users\rajup\OneDrive\Pictures\linked in .png"
 
 // event bindinng.............................................
 
+evant1(){
+  console.log("Buttun click by Raju.....");
+}
+
+evant2(){
+    window.alert("This is Raju's alert mag....")
+}
+
+evantMouseover(testvalue:string){
+  console.log(testvalue);
+}
+evtMouseOver_2(eventDetails:MouseEvent){
+   // console.log(eventDetails);
+    // let a:unknown = "madan";
+    // let name = a as string
+     let paragraph = eventDetails.target as HTMLParagraphElement;
+     window.alert(paragraph.innerText);   //Third Paragraph
+
+   // i want to get the text of the paragraph       //Third Paragraph
+
+    //alert message
+
+    //i understand target is paragraph element 
+
+
+  }
+
+
+  evtKeyEvent(eventDetails:KeyboardEvent){
+    //console.log(eventDetails);
+    let input = eventDetails.target as HTMLInputElement;
+    console.log(input.value);
+  }
+
+
+
+
+
+
+
+
+
 
 
 
