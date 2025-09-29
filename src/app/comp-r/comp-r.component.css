@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    height: fit-content;
+    background-color: brown;
+       max-width: fit-content;
+      
+    }
+
+    p{
+      background-color: aqua;
+      max-width: fit-content;
+
+    }
