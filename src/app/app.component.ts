@@ -29,13 +29,21 @@ emailAdress =  "rajupower@gmail.com"
 
  inputtype = "checkbox"
 
-//  imagelink ="src/images/img.1"
 cortoonlink = "https://www.shutterstock.com/shutterstock/photos/2644655981/display_1500/stock-vector-a-cheerful-cartoon-panda-sits-holding-a-large-red-heart-its-expression-is-joyful-and-the-style-is-2644655981.jpg"
 
 // imagesrc ="ANGULARINTRO/src/images/img.1"
+//  imagesrc ="src/images/img.1"
 
-imagesrc ="c:\Users\rajup\OneDrive\Pictures\linked in .png"
+imagesrc_1="https://avatars.githubusercontent.com/u/225119696?s=400&u=d1bb324a0fecc7bca0d7b33619ae457b4f5e179a&v=4"
 
+
+// imagesrc ="D:\Angular_repos\angular2\Angularintro\src\images\Closing Remarks ngCo.png"
+
+
+imagesrc_2 ="src/images/ClosingRemarksngCo.png"
+
+
+imagesrc_3 ="C:\Users\rajup\OneDrive\Pictures\Closing Remarks ngCo.png"
 // event bindinng.............................................
 
 evant1(){
