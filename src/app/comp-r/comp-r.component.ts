@@ -6,7 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp-r.component.css']
 })
 export class CompRComponent {
+
+divcolor = "green";
+  fontcolor = "red";
+
+isAdmin = true;
+
+
+
+  clickdiv(){
+  this.divcolor = "aqua";
+
+  this.fontcolor ="blue"
+  }
+
+
 // string interpolation.................
+
+RoleId = 2;
+costmorrole = "Adimin:";
 
 Headingname = "Raju Antharala";
   
@@ -77,8 +95,15 @@ event_4(eventDetailes:KeyboardEvent){
 
 }
 
+eventngchange($event:any){
+  console.log($event);
+this.costmorrole =$event;
 
+}
+eventngStyle(){
+  
 
+}
 
 
 

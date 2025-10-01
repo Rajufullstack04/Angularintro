@@ -52,5 +52,68 @@ Myimage:
 
  Enter any key on the keybord:<input type="text" (keyup)="event_4($event)" />
 
+<br>
+
+<!----------------------------------------NgModel--------------------------------------------------->
+<!-- <br>
+<select [value]="RoleId">
+    <option value="1">Admin</option>
+        <option value="2">Non-Admin</option>
+
+</select>
+<br> -->
+<!-- now we aply ngmodel to this---------------------------
+
+
+<select [ngModel]="RoleId">
+    <option value="1">Admin</option>
+        <option value="2">Non-Admin</option>
+
+</select> -->
+<!-- ----------NgModel Change----------- -->
+<br>
+<!-- 
+<input [ngModel]="costmorrole" (ngModelChange)="eventngchange($event)" />
+<br>
+<p>{{costmorrole}}</p> -->
+<br>
+<!---------------------ngmodel+ngmodelchange----------------->
+
+
+<!-- [(ngModel)]=[ngModel]+(ngModelChange) -->
+
+
+<input [(ngModel)]="costmorrole" />
+
+<p>{{costmorrole}}</p>
+
+<!--Directives:Wich is useful for add behaviouur of the element-->
+<!-----------------------------------------
+ngStyle,
+ngClass,
+ngIf,
+ngTemplate,
+ngSwitch
+---------------------------------------------->
+
+<!-- ngStyle------------- -->
+
+ <div style="background-color: aqua;">This is normal style</div>
+ <br>
+<button (click)="clickdiv()">ClickMe</button>
+<br>
+ <div [ngStyle]="{'background-color':divcolor,'color':fontcolor}" >This is ngStyle</div>
+
+<br>
+
+<div [ngStyle]="{'background-color': isAdmin == true ? divcolor:'pink'}">Welcome To Raju's World</div>
+
+<br>
+<div [ngStyle]="{'background-color': isAdmin == true ? 'red':'pink'}" >This is ngStyle</div>
+
+
+
+
+
 
 
