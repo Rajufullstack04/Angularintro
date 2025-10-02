@@ -11,3 +11,15 @@ h1{
       max-width: fit-content;
 
     }
+    .redparagraph{
+      background-color: brown;
+    }
+    .greenparagraph{
+      background-color: aqua;
+    }
+.GoodEmoplye{
+  background-color: darkgreen;
+}
+.BadEmoplye{
+  background-color: yellow;
+}

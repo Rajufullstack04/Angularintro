@@ -89,10 +89,19 @@ Myimage:
 
 <!--Directives:Wich is useful for add behaviouur of the element-->
 <!-----------------------------------------
-ngStyle,
-ngClass,
-ngIf,
+
+
+-----(---ngStyle,ngClass,----------(Atributedirectives)---------)
+
+
+ngIf,and else-------
+
+localref
+
 ngTemplate,
+
+ngfor,
+
 ngSwitch
 ---------------------------------------------->
 
@@ -110,6 +119,76 @@ ngSwitch
 
 <br>
 <div [ngStyle]="{'background-color': isAdmin == true ? 'red':'pink'}" >This is ngStyle</div>
+
+<br>
+<!--------ngClass--------------------------------------------------->
+
+<div class="redparagraph">THIS IS NORMAL CLASS</div>
+<br>
+<div [ngClass]="colorType == 'brown' ?'greenparagraph':''"> THIS IS ngClass</div>
+<br>
+<div [ngClass]="EmpolyeType == 'Good' ?'GoodEmoplye':'BadEmoplye'">Empolye Ststus:{{EmpolyeType }} </div>
+<br>
+
+<!-------------------ngIf------------------>
+<div
+    *ngIf = "Myname == 'raju'  ">Welcome raju
+</div>
+
+
+
+<!--localref-------------------------------->
+<p #Name>My Name is Raju</p>
+<p #From>I am from kadiri</p>
+<button (click)="AboutMe(Name,From)" >ClickMe</button>
+
+
+<!-------------ng-Template------------------>
+
+<div
+    *ngIf = "Myname == 'Raju';else Acesess ">Welcome Raju
+</div>
+
+<ng-template #Acesess> 
+    <div>
+       You're not Raju. Access Denied.
+    </div>
+</ng-template>
+<br>
+<!------------------ngFor------------------>
+<h1>Option 1</h1>
+<ul>
+    <li>raju</li>
+    <li>ravi</li>
+    <li>venky</li>
+    <li>adarsh</li>
+</ul>
+<br>
+
+<h1>Option 2 useing ngFor</h1>
+<ul *ngFor="let student of SudentDetailes; let $number=index">
+    <li> {{$number}} :{{student}} </li>
+</ul>
+<!--------------------array of object---------------->
+
+
+<h1>Option 3 useing ngFor on array of object</h1>
+<ul *ngFor="let student of Studentname; let $number=index">
+    <li> {{$number}}->{{student.id}}->{{student.name}} </li>
+</ul>
+
+<!---------------ngSwitch and ngSwitchCase and ngSwitchDifalt------------>
+
+<div [ngSwitch]="StudentID" >
+<p *ngSwitchCase="1" >This is Raju ID</p>
+<p *ngSwitchCase="2" >This is venky ID</p>
+<p *ngSwitchCase="3" >This is Ravi ID</p>
+<p *ngSwitchDefault="" >Unabule to find student</p>
+
+
+
+</div>
+
 
 
 

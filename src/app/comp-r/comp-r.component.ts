@@ -106,6 +106,38 @@ eventngStyle(){
 }
 
 
+colorType = "brown";
+
+EmpolyeType = "Good";
+
+Myname = "Raji";
+
+ 
+// ------------------------------------------------
+
+AboutMe(event1:any,event2:any){
+console.log(event1);
+console.log(event2);
+
+
+}
+
+
+SudentDetailes = [ "raju" ,"ravi","venky","adarsh"];
+
+// ------------------array of object---------------
+
+Studentname=[
+  {id:29,name:"raju"},
+  {id:30,name:"ravi"},
+  {id:31,name:"venky"},
+  {id:32,name:"ramu"},
+  {id:33,name:"adarsh"}
+
+];
+
+StudentID= 5;
+
 
 
 
