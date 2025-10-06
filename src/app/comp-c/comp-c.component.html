@@ -1,0 +1,57 @@
+<p>comp-c works!</p>
+
+<!--  view child nothing but it Gives the Element of View referecne 
+ in the typescript file with the hellp of ref name -->
+
+<p #welcome>welcome Raju</p>
+<br>
+<span #hello>Hello Raju</span>
+<br>
+<input type="text" placeholder="firstname" #firstname   />
+<br>
+<input type="text" placeholder="lastname" #secondname   />
+<br>
+<button (click)="buttonclick()">click</button>
+<br> 
+<hr>
+<p>Here we are injecting the value from app.component. by using ng-conteent  </p>
+
+<!--------------ng-content-------------------------------------->
+<ng-content select ="[mynumber]">
+
+</ng-content>
+<hr>
+<!--=--------------ng-containar-------------------------->
+
+<h1>Div</h1>
+<div *ngFor="let Marks of [98,86,95]" >
+    <p>{{Marks}} </p>
+</div>
+
+<!---------ng-contaainer it won't create the extra DOM ----------->
+
+<h1>ng-contaainar</h1>
+<ng-container *ngFor="let Marks of [98,86,95]">
+    <p>{{Marks}} </p>
+</ng-container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
