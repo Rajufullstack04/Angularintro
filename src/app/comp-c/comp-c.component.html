@@ -49,14 +49,17 @@ let-id="studentId"
  let-mobN="MobailNumber" 
     #testTenplate>
     <p>Anguler ng-templeate</p>
-    <form >
-        <input [value]="stuname" type="text" placeholder="studentname..."/>
+
+
+    <form  >
+
+    studentname: <input [value]="stuname" type="text" placeholder="studentname..."/>
         <br>
-        <input  [value]="id" type="text" placeholder="studentId..."/>
+    studentId:   <input  [value]="id" type="text" placeholder="studentId..."/>
          <br>
-       <input [value]="email" type="text" placeholder="studentemail..."/>
+    studentemail:<input [value]="email" type="text" placeholder="studentemail..."/>
       <br>
-      <input [value]="mobN" type="text" placeholder="MobailNumber..."/>
+    MobailNumber: <input [value]="mobN" type="text" placeholder="MobailNumber..."/>
 
     </form>
 </ng-template>
