@@ -21,6 +21,8 @@
 
 </ng-content>
 <hr>
+
+
 <!--=--------------ng-containar-------------------------->
 
 <h1>Div</h1>
@@ -34,7 +36,39 @@
 <ng-container *ngFor="let Marks of [98,86,95]">
     <p>{{Marks}} </p>
 </ng-container>
+<hr>
 
+<!----------------ng-template------------->
+<h1>Dynamic Template</h1>
+
+
+<ng-template 
+ let-stuname="studentname"
+let-id="studentId"
+ let-email="studentemail"
+ let-mobN="MobailNumber" 
+    #testTenplate>
+    <p>Anguler ng-templeate</p>
+    <form >
+        <input [value]="stuname" type="text" placeholder="studentname..."/>
+        <br>
+        <input  [value]="id" type="text" placeholder="studentId..."/>
+         <br>
+       <input [value]="email" type="text" placeholder="studentemail..."/>
+      <br>
+      <input [value]="mobN" type="text" placeholder="MobailNumber..."/>
+
+    </form>
+</ng-template>
+
+<ng-container #containarRef>
+
+</ng-container>
+
+
+
+
+<button (click)="btnClickme()">Click Me</button>
 
 
 

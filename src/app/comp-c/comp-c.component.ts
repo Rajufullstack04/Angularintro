@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
+import { Component, ContentChild, ElementRef, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'app-comp-c',
@@ -20,6 +20,9 @@ export class CompCComponent {
    @ViewChild('hello') s1 : ElementRef;
    @ViewChild('firstname') firstname : ElementRef;
    @ViewChild('secondname') secondname : ElementRef;
+
+
+
 
    // --------------contentchild--------------------------------------------
    @ContentChild('Number') number :ElementRef;
@@ -47,8 +50,21 @@ buttonclick(){
 
 
 }
+@ViewChild('testTenplate') template1 : TemplateRef<any>;
+@ViewChild('containarRef',{read:ViewContainerRef}) containarRef : ViewContainerRef;
+// @ViewChild('containarRef') v1 : ViewContainerRef;
 
 
+btnClickme(){
+
+console.log(this.containarRef);
+// console.log(this.v1);
+this.containarRef.insert(this.template1.createEmbeddedView({"studentname":"Raju","studentId":"24","studentemail":"yfdydtfyv@email.com","MobailNumber":"284845154"}));
+
+
+console.log(this.template1);
+
+}
 
 
 }
